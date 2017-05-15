@@ -1,0 +1,21 @@
+/* 
+    Created on : 12/05/2017, 10:45:54
+    Author     : Administrador
+*/
+
+/*fixar topo no inicio da pagina*/
+.topo{
+margin: auto;
+width: 100%;
+top: 0;
+position: initial;
+}
+
+/*fixar o rodapé no fim da pagina*/
+
+.footer{
+margin: auto;
+width: 100%;
+bottom: 0;
+position:initial;
+}
