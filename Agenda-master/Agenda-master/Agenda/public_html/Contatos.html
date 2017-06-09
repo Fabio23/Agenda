@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--link estilo.css-->
+        <link href="css/estilo.css" rel="stylesheet">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--titulo da aplicacao-->
+        <title>Contatos</title>
+    </head>
+
+    <body>
+        <!--topo-->
+        <nav class="topo">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Contatos</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">              
+                    <li>
+                        <a class="waves-effect waves-light btn">
+                                <i class="material-icons right">search</i>Pesquisar</a>
+                            <a  href="/Contatos.html"></a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-light btn">
+                            <i class="material-icons right">add</i>Adicionar</a>
+                        <a  href="/Contatos.html"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div  class="col s10 offset-s2">
+                <div id="container-main">
+                    <div class="main">
+                        <!-- Programar aqui!! -->
+
+                        <!--campo e botão de pesquisa-->
+                        <div class="row box-topo-tela-chamada">
+                            <div class="col s12">
+                                <div class="col s8">
+                                    <form>
+                                        <div class="input-field offset-s8">
+                                            <input id="txtBusca" type="text" class="validate" name="busca">
+                                            <label for="txtBuscar">Pesquisar...</label>
+                                            <a class="waves-effect waves-light btn"><i class="material-icons ">search</i></a>
+                                        </div>
+                                    </form><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row"><!-- inicio da linha -->
+                            <div class="card">
+                                <div class="cabecalho cabecalho-informacoes">
+                                    <i class="fa fa-user-o left" aria-hidden="true"></i>
+                                    <h3> Contatos</h3>
+                                </div>
+                                <div class="corpo-card">
+                                    <table class="tabela-clientes horizontal striped">
+                                        <thead>
+                                            <tr>
+                                                <th>RF</th>
+                                                <th>Nome</th>
+                                                <th>Telefone</th>
+                                                <th>E-mail</th>
+                                                <th>Ação</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>x185688</td>
+                                                <td>Fabio Junior</td>
+                                                <td>11 59266500</td>
+                                                <td>fabio@email.com</td>
+
+                                                <!-- Ver, Editar e Deletar cliente-->
+                                                <td id="visualizar">
+                                                    <a class="waves-effect waves-light btn">
+                                                        <i class="material-icons">visibility</i></a>
+                                                    <a  href="/Contatos.html"></a>
+
+                                                </td>
+                                                </form>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!-- fim card -->
+                        </div><!-- fim da linha -->
+                    </div><!-- fim do main-->
+                </div>
+            </div>
+        </div>
+        <!--fim do formulario-->
+
+        <!--rodapé-->
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Agenda Prefeitura Regional de Parelheiros</h5>
+                        <p class="grey-text text-lighten-4">A inovação é a ferramenta mais forte para o sucesso de uma organização.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="http://parelheiros.prefeitura.sp.gov.br">http://parelheiros.prefeitura.sp.gov.br</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Emerson Cardoso</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Fabio Jr Ribeiro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Projeto Prefeitura - Informática
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
+        <!--fim do rodapé--> 
+
+
+
+        <!--os scripts devem ser por ultimos-->
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('select').material_select();
+            });
+        </script>
+
+    </body>
+</html>
