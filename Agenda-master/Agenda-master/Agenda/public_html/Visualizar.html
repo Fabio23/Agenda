@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!--link estilo.css-->
+        <link href="css/estilo.css" rel="stylesheet">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--titulo da aplicacao-->
+        <title>Visualizar</title>
+    </head>
+
+    <body>
+        <!--topo-->
+        <nav class="topo">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Visualizar Contatos</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">              
+                    <li>
+                        <button class="btn btn-adicionar-cliente waves-effect waves-light" type="button" name="btn-adicionar">Adicionar
+                            <i class="fa fa-plus" aria-hidden="true"></i> 
+                        </button>
+                        <button class="btn btn-editar-cliente waves-effect waves-light right" type="button">Editar
+                            <i class="fa fa-pencil"></i> 
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div  class="col s10 offset-s2">
+                <div id="container-main">
+                    <div class="main">
+                        <!-- Programar aqui!! -->
+                        <div class="row"><!-- INICIO DA LINHA -->
+                            <div class="card"><!-- INICIO DO CARD -->
+                                <div class="cabecalho cabecalho-informacoes">
+                                    <i class="fa fa-user-o left"></i>
+                                    <header>Informações do Cliente</header>
+                                </div>
+                                <div class="corpo-card"><!-- INICIO DO CORPO DO CARD -->
+                                    <ul class="collapsible popout" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header"><i class="material-icons">person_pin</i><span>Dados</span></div>
+                                            <div class="collapsible-body">
+                                                <table class="tabela-cliente-ver-dados-pessoais vertical striped">
+                                                    <tr>
+                                                        <th>RF</th>
+                                                        <td>x185688</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nome</th>
+                                                        <td>Fabio Junior Ribeiro Ezequiel</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>E-mail</th>
+                                                        <td>fabio@email.com</td>
+                                                    </tr>
+
+
+                                                </table>
+                                            </div>
+                                        </li>
+                                </div>
+                                </li>
+                                </ul>
+                            </div> <!-- FIM DO CORPO DO CARD -->
+
+                        </div><!--FIM DO CARD -->
+                    </div><!-- FIM DA LINHA -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--fim do formulario-->
+
+
+    <!--rodapé-->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Agenda Prefeitura Regional de Parelheiros</h5>
+                    <p class="grey-text text-lighten-4">A inovação é a ferramenta mais forte para o sucesso de uma organização.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="http://parelheiros.prefeitura.sp.gov.br">http://parelheiros.prefeitura.sp.gov.br</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Emerson Cardoso</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Fabio Jr Ribeiro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Projeto Prefeitura - Informática
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!--fim do rodapé--> 
+
+
+
+    <!--os scripts devem ser por ultimos-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+
+</body>
+</html>
