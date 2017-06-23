@@ -33,3 +33,10 @@
     margin-top:-45px;
     width: 50%;
 }
+
+
+   a#btnBusca.waves-effect.waves-light.btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
